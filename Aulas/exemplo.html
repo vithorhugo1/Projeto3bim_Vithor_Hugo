@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Float Layout</title>
+    <style>
+        section{
+            width: 80%;
+            background: lightblue;
+            padding: 10px;
+            min-height: 120px;
+        }
+
+        hr{
+            width: 70%;
+        }
+        p{
+           text-align: justify; 
+        }
+
+        .img-none {
+            float: right;
+            margin: 5px;
+        }
+
+        .img-left {
+            float: left;
+            margin: 5px;
+        }
+
+        .img-rigth {
+            float: right;
+            margin: 5px;
+        }
+
+        .float div{
+            padding: 15px;
+            background: whitesmoke;
+            border-style: solid;
+            border-width: 1px;
+            border-color: black;
+        }
+        .float .div0{
+            float: left;
+            background: white;
+        }
+        .float .div1{
+            float: left;
+            background: red;
+        }
+        .float .div2{
+            
+            float: left;
+            background: yellow;
+        }
+        .float .div3{
+            
+            float: left;
+            background: green;
+        }
+
+        h1{
+            background: lightgray;
+            padding: 10px;
+        }
+        .clearfix{
+            overflow: auto;
+        }
+        .clear .div1{
+            float: left;
+            padding: 10px;
+            border: 1px solid green;
+        }
+        .clear .div2{
+            padding: 10px;
+            border: 1px solid red;
+        }
+        .clear .div3{
+            float: left;
+            padding: 10px;
+            border: 1px solid green;
+        }
+        .clear .div4{
+            clear: left;
+            padding: 10px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exemplos Float Flutuante:</h1>
+
+    <section class="clearfix">
+
+        <h2>Float None</h2>
+
+        <h5>Aqui a imagem aparecerá onde ocorre o Texto (none):</h5>
+        
+        <p>
+            <img class="img-none" src="pineapple.png" alt="Pineapple" style="width:150px;height:150px;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, 
+        nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est,
+        ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.
+        Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna
+        a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper
+        ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis.
+        Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum.
+        Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+        </p>
+    </section>
+    
+    <hr>
+    
+    <section class="clearfix">
+    
+        <h2>Float Left</h2>
+
+        <h5>Aqui a imagem aparecerá a esquerda do Texto (Left):</h5>
+        
+        <p><img class="img-left" src="pineapple.png" alt="Pineapple" style="width:150px;height:150px;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+    </p>
+    
+    </section>
+
+    <hr>
+    
+    <section  class="clearfix">
+        <h2>Float Rigth</h2>
+
+        <h5>Aqui a imagem aparecerá a direita do Texto (Right):</h5>
+        
+        <p><img class="img-rigth" src="/imagens/pineapple.png" alt="Pineapple" style="width:150px;height:150px;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+    </section>
+
+    <h1>Exemplo usando Float lado a lado</h1>
+
+    <section class="float">        
+        <h2>Sem definição:</h2>
+        <div >0</div>
+        <div >1</div>
+        <div >2</div>
+        <div >3</div>
+    </section>
+    <hr>
+    <section class="float">
+        <h2>Usando Float:</h2>
+        <div class="div0">0</div>
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+    </section>
+    <h1>Exemplo usando propriedade clear:</h1>
+
+    <section class="clear">
+
+        <h2> Exemplo sem clear</h2>
+
+        <div class="div1"> Div 1</div>
+        <div class="div2">Div 2- Este exemplo  nao estamos utilizando a propriedade clear.
+            Veja como as divs se sobrepoem na hora de apresentar.
+            teste teste teste teste teste teste teste 
+        </div>
+       
+
+        <h2>Exemplo com clear</h2>
+
+        <div class="div3">div 3</div>
+        <div class="div4">div 4- esse exemplo estamos utilizando a propriedade clear na  div 4.
+            veja como ela vai para baixo da div 3.
+            testettetetetwdsaojsadjsaiodsajoidsajiodsajiodsajsadoijdsa
+        </div>
+
+     </section>   
+</body>
+
+</html>
