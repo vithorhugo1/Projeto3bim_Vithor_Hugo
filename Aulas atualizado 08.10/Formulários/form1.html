@@ -1,0 +1,112 @@
+<html lang="pt-br">
+<head>
+    <title>Formulário 1</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    body{
+        animation: rgb 10s ease infinite;
+        color: white;
+        text-shadow: 2px 2px black;
+        font-family: Jazz LET, fantasy;
+        padding: 40px;
+        background: linear-gradient(-45deg, #7F2F9E, #BC47EB, #0E365E, #185C9E) no-repeat;
+        background-size: 300% 300%;
+        border-radius: 40px;
+    }
+
+
+    @keyframes rgb {
+            0% {
+                background-position: 0 50%;
+            }
+            
+            50% {
+                background-position: 100% 50%;
+            }
+            
+            100% {
+              background-position: 0 50%
+            }
+        }
+
+    .formulario1{
+        animation: rgb 10s ease infinite;
+        text-align: center;
+        font-family: Jazz LET, fantasy;
+        padding: 40px;
+        background: rgb(67, 67, 241);
+        background-size: 300% 300%;
+        border-radius: 40px;
+        width: 400px;
+        margin-left: 535px;
+	    margin-top: 50px;
+        border: 4px solid rgb(47, 61, 255);
+       
+    }
+    .titulo{
+        animation: rgb 10s ease infinite;
+      width: 500px;
+        border: 4px solid rgb(67, 67, 241);
+        border-radius: 40px;
+            background: rgb(67, 67, 241);
+            background-size: 300% 300%;
+        font-family: Jazz LET, fantasy;
+        margin-left: 525px;
+	    margin-top: 50px;
+        
+        
+    }
+    .centralizar{
+        text-align: center;
+    }
+    .voltar{
+        color: white;
+    }
+
+    .label, input{
+        border-radius: 10px;
+    }
+
+
+</style>
+
+
+
+
+<body>
+<div class="centralizar">
+<h1 class="titulo">Formulário 1: Criação Usuário e Senha</h1>
+</div>
+
+
+    <div class="formulario1">
+        <form id="form1">
+
+            <br>
+            <br>
+            
+            <label for="email">E-mail:  </label>
+            <input type="email" id="email" name="email">
+            <br>
+            <br>
+            <label for="senha">Senha:  </label>
+            <input type="password" id="password" name="password">
+            <br>
+            <br>    
+            <a href="form2.html" class="voltar">Inscreva-se</a>
+            <br>
+            <br>
+            
+            <button id="botao"><input type="submit" value="Enviar"></button>
+            
+        
+        </form>
+    
+</body>
+</html>
