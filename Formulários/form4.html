@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário - 4</title>
+</head>
+
+<style>
+
+
+body{
+    color: white;
+}
+section{
+    height: 450px;
+     width: 750px;
+     background-color: black;
+     margin-left: 470px ;
+     border-radius: 40px;
+     padding: 10px;
+}
+.info{
+    height: 20%;
+    width: 80%;
+    margin-left: 110px;
+    margin-top: -80px;
+    border-radius: 40px;
+    color: white;
+    background-color: black;
+    border: 2px solid purple;
+}  
+.tittle{
+    text-align: center;
+}
+.profi{
+    margin-top: 30px;
+    margin-left: 15px;
+    padding: 5px;
+}
+.msg{
+    margin-top: -50px;
+    margin-left: 90px;
+    color: white;
+    font-family: 'Couerier New';
+    font-size: 20px;
+}
+.pvc{
+    color: white;
+    margin-left: 180px;
+    background-color: black;
+}
+.tst{
+    margin-left: 90px;
+    margin-top: 150px;
+}
+.cor{
+    margin-top: 100px;
+    margin-left: 330px;
+}
+
+</style>
+
+
+<body>
+
+<h1 class="tittle">Formulário - 4</h1>
+
+
+<section>
+
+
+    <img class="profi" src="profileimagem.png" alt="Foto de Perfil" width="80px" height="80px">
+    <br>
+    <form action="/action_page.php">
+        <input class="info" type="text" id="fname" name="fname" value="O que está acontecendo?"><br>
+        <br>
+        <label class="cor" for="text">Cor: </label>
+        <input type="color" id="nome" name="nome">
+      </form> 
+
+
+
+    <form action="/action_page.php" class="priv">
+        <label class="pvc" for="privacidade"></label>Qualquer pessoa pessoa pode responder? 
+        <select id="privacidade" name="privacidade">
+        <option value="volvo"></option>
+        <option value="saab">Qualquer um</option>
+        <option value="saab">Apenas quem me segue</option>
+        <br>
+        <br>
+        <br>    
+    </form> 
+
+</section>
+
+<section class="postar">
+
+    <button class="postar"> <input type="submit" value="Postar"> </button> 
+</section>
+
+
+
+</body>
+</html>
